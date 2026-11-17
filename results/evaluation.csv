@@ -1,0 +1,71 @@
+scenario,family,change,truth,top_trigger,verdict,verdict_expected,top1_hit,minimal_set
+phm-vibration-failure-0,single,removed:collect-vibration,sf-vibration-0,sf-vibration-0,single trigger,single trigger,1,sf-vibration-0
+phm-vibration-failure-0,single,removed:explain,sf-vibration-0,sf-vibration-0,single trigger,single trigger,1,sf-vibration-0
+phm-vibration-failure-0,single,removed:run-rul,sf-vibration-0,sf-vibration-0,single trigger,single trigger,1,sf-vibration-0
+phm-vibration-failure-0,single,added:use-fallback-sensor,sf-vibration-0,sf-vibration-0,single trigger,single trigger,1,sf-vibration-0
+phm-vibration-failure-1,single,removed:collect-vibration,sf-vibration-1,sf-vibration-1,single trigger,single trigger,1,sf-vibration-1
+phm-vibration-failure-1,single,removed:explain,sf-vibration-1,sf-vibration-1,single trigger,single trigger,1,sf-vibration-1
+phm-vibration-failure-1,single,removed:run-rul,sf-vibration-1,sf-vibration-1,single trigger,single trigger,1,sf-vibration-1
+phm-vibration-failure-1,single,added:use-fallback-sensor,sf-vibration-1,sf-vibration-1,single trigger,single trigger,1,sf-vibration-1
+phm-temperature-failure-0,single,removed:collect-temperature,sf-temperature-0,sf-temperature-0,single trigger,single trigger,1,sf-temperature-0
+phm-temperature-failure-0,single,removed:explain,sf-temperature-0,sf-temperature-0,single trigger,single trigger,1,sf-temperature-0
+phm-temperature-failure-0,single,removed:run-rul,sf-temperature-0,sf-temperature-0,single trigger,single trigger,1,sf-temperature-0
+phm-temperature-failure-0,single,added:use-fallback-sensor,sf-temperature-0,sf-temperature-0,single trigger,single trigger,1,sf-temperature-0
+phm-temperature-failure-1,single,removed:collect-temperature,sf-temperature-1,sf-temperature-1,single trigger,single trigger,1,sf-temperature-1
+phm-temperature-failure-1,single,removed:explain,sf-temperature-1,sf-temperature-1,single trigger,single trigger,1,sf-temperature-1
+phm-temperature-failure-1,single,removed:run-rul,sf-temperature-1,sf-temperature-1,single trigger,single trigger,1,sf-temperature-1
+phm-temperature-failure-1,single,added:use-fallback-sensor,sf-temperature-1,sf-temperature-1,single trigger,single trigger,1,sf-temperature-1
+phm-cost-spike-0,single,modified:run-rul,cost-0,cost-0,single trigger,single trigger,1,cost-0
+phm-cost-spike-1,single,modified:run-rul,cost-1,cost-1,single trigger,single trigger,1,cost-1
+phm-vibration-anomaly-0,single,added:raise-alert,anom-0,anom-0,single trigger,single trigger,1,anom-0
+phm-vibration-anomaly-1,single,added:raise-alert,anom-1,anom-1,single trigger,single trigger,1,anom-1
+health-contradiction-G1-0,single,removed:retrieve-guidelines,contra-G1-0,contra-G1-0,single trigger,single trigger,1,contra-G1-0
+health-contradiction-G1-0,single,added:request-clarification,contra-G1-0,contra-G1-0,single trigger,single trigger,1,contra-G1-0
+health-contradiction-G1-1,single,removed:retrieve-guidelines,contra-G1-1,contra-G1-1,single trigger,single trigger,1,contra-G1-1
+health-contradiction-G1-1,single,added:request-clarification,contra-G1-1,contra-G1-1,single trigger,single trigger,1,contra-G1-1
+health-emergency-0,single,removed:draft-answer,emerg-0,emerg-0,single trigger,single trigger,1,emerg-0
+health-emergency-0,single,added:escalate-clinician,emerg-0,emerg-0,single trigger,single trigger,1,emerg-0
+health-new-evidence-0,single,added:reverify-citations,evid-0,evid-0,single trigger,single trigger,1,evid-0
+phm-temp-failure-plus-anomaly-0,joint,removed:collect-temperature,sf-temperature-0,sf-temperature-0,joint trigger,joint trigger,1,sf-temperature-0;anom-0
+phm-temp-failure-plus-anomaly-0,joint,removed:explain,sf-temperature-0,sf-temperature-0,joint trigger,joint trigger,1,sf-temperature-0;anom-0
+phm-temp-failure-plus-anomaly-0,joint,removed:run-rul,sf-temperature-0,sf-temperature-0,joint trigger,joint trigger,1,sf-temperature-0;anom-0
+phm-temp-failure-plus-anomaly-0,joint,added:raise-alert,anom-0,anom-0,joint trigger,joint trigger,1,sf-temperature-0;anom-0
+phm-temp-failure-plus-anomaly-0,joint,added:use-fallback-sensor,sf-temperature-0,sf-temperature-0,joint trigger,joint trigger,1,sf-temperature-0;anom-0
+phm-temp-failure-plus-anomaly-1,joint,removed:collect-temperature,sf-temperature-1,sf-temperature-1,joint trigger,joint trigger,1,sf-temperature-1;anom-1
+phm-temp-failure-plus-anomaly-1,joint,removed:explain,sf-temperature-1,sf-temperature-1,joint trigger,joint trigger,1,sf-temperature-1;anom-1
+phm-temp-failure-plus-anomaly-1,joint,removed:run-rul,sf-temperature-1,sf-temperature-1,joint trigger,joint trigger,1,sf-temperature-1;anom-1
+phm-temp-failure-plus-anomaly-1,joint,added:raise-alert,anom-1,anom-1,joint trigger,joint trigger,1,sf-temperature-1;anom-1
+phm-temp-failure-plus-anomaly-1,joint,added:use-fallback-sensor,sf-temperature-1,sf-temperature-1,joint trigger,joint trigger,1,sf-temperature-1;anom-1
+phm-temp-failure-plus-anomaly-2,joint,removed:collect-temperature,sf-temperature-2,sf-temperature-2,joint trigger,joint trigger,1,sf-temperature-2;anom-2
+phm-temp-failure-plus-anomaly-2,joint,removed:explain,sf-temperature-2,sf-temperature-2,joint trigger,joint trigger,1,sf-temperature-2;anom-2
+phm-temp-failure-plus-anomaly-2,joint,removed:run-rul,sf-temperature-2,sf-temperature-2,joint trigger,joint trigger,1,sf-temperature-2;anom-2
+phm-temp-failure-plus-anomaly-2,joint,added:raise-alert,anom-2,anom-2,joint trigger,joint trigger,1,sf-temperature-2;anom-2
+phm-temp-failure-plus-anomaly-2,joint,added:use-fallback-sensor,sf-temperature-2,sf-temperature-2,joint trigger,joint trigger,1,sf-temperature-2;anom-2
+phm-anomaly-plus-cost-0,joint,modified:run-rul,cost-0,cost-0,joint trigger,joint trigger,1,anom-0;cost-0
+phm-anomaly-plus-cost-0,joint,added:raise-alert,anom-0,anom-0,joint trigger,joint trigger,1,anom-0;cost-0
+phm-anomaly-plus-cost-1,joint,modified:run-rul,cost-1,cost-1,joint trigger,joint trigger,1,anom-1;cost-1
+phm-anomaly-plus-cost-1,joint,added:raise-alert,anom-1,anom-1,joint trigger,joint trigger,1,anom-1;cost-1
+phm-anomaly-plus-cost-2,joint,modified:run-rul,cost-2,cost-2,joint trigger,joint trigger,1,anom-2;cost-2
+phm-anomaly-plus-cost-2,joint,added:raise-alert,anom-2,anom-2,joint trigger,joint trigger,1,anom-2;cost-2
+health-contradiction-plus-evidence-0,joint,removed:retrieve-guidelines,contra-g2-0,contra-g2-0,joint trigger,joint trigger,1,contra-g2-0;evid-0
+health-contradiction-plus-evidence-0,joint,added:request-clarification,contra-g2-0,contra-g2-0,joint trigger,joint trigger,1,contra-g2-0;evid-0
+health-contradiction-plus-evidence-0,joint,added:reverify-citations,evid-0,evid-0,joint trigger,joint trigger,1,contra-g2-0;evid-0
+health-contradiction-plus-evidence-1,joint,removed:retrieve-guidelines,contra-g2-1,contra-g2-1,joint trigger,joint trigger,1,contra-g2-1;evid-1
+health-contradiction-plus-evidence-1,joint,added:request-clarification,contra-g2-1,contra-g2-1,joint trigger,joint trigger,1,contra-g2-1;evid-1
+health-contradiction-plus-evidence-1,joint,added:reverify-citations,evid-1,evid-1,joint trigger,joint trigger,1,contra-g2-1;evid-1
+health-contradiction-plus-emergency-0,joint,removed:draft-answer,emerg-0,emerg-0,joint trigger,joint trigger,1,contra-g1-0;emerg-0
+health-contradiction-plus-emergency-0,joint,removed:retrieve-guidelines,contra-g1-0,contra-g1-0,joint trigger,joint trigger,1,contra-g1-0;emerg-0
+health-contradiction-plus-emergency-0,joint,added:escalate-clinician,emerg-0,emerg-0,joint trigger,joint trigger,1,contra-g1-0;emerg-0
+health-contradiction-plus-emergency-0,joint,added:request-clarification,contra-g1-0,contra-g1-0,joint trigger,joint trigger,1,contra-g1-0;emerg-0
+health-contradiction-plus-emergency-1,joint,removed:draft-answer,emerg-1,emerg-1,joint trigger,joint trigger,1,contra-g1-1;emerg-1
+health-contradiction-plus-emergency-1,joint,removed:retrieve-guidelines,contra-g1-1,contra-g1-1,joint trigger,joint trigger,1,contra-g1-1;emerg-1
+health-contradiction-plus-emergency-1,joint,added:escalate-clinician,emerg-1,emerg-1,joint trigger,joint trigger,1,contra-g1-1;emerg-1
+health-contradiction-plus-emergency-1,joint,added:request-clarification,contra-g1-1,contra-g1-1,joint trigger,joint trigger,1,contra-g1-1;emerg-1
+phm-budget-exhausted-0,none,removed:draft-report,,,no trigger found,no trigger found,1,
+phm-budget-exhausted-1,none,removed:draft-report,,,no trigger found,no trigger found,1,
+phm-budget-exhausted-2,none,removed:draft-report,,,no trigger found,no trigger found,1,
+phm-budget-exhausted-3,none,removed:draft-report,,,no trigger found,no trigger found,1,
+health-budget-exhausted-0,none,removed:add-disclaimer,,,no trigger found,no trigger found,1,
+health-budget-exhausted-1,none,removed:add-disclaimer,,,no trigger found,no trigger found,1,
+health-budget-exhausted-2,none,removed:add-disclaimer,,,no trigger found,no trigger found,1,
+health-budget-exhausted-3,none,removed:add-disclaimer,,,no trigger found,no trigger found,1,

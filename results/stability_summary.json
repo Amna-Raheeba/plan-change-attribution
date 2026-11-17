@@ -1,0 +1,20 @@
+{
+  "n_scenarios": 30,
+  "n_changes_scored": 62,
+  "n_replays": 20,
+  "n_duplicate_replays": 5,
+  "mean_stability_true": 1.0,
+  "n_true_triggers": 62,
+  "mean_stability_best_distractor": 0.0,
+  "high_confidence_coverage": 1.0,
+  "high_confidence_accuracy": 1.0,
+  "high_confidence_n": 62,
+  "false_confidence_rate": 0.0,
+  "mean_minimal_set_stability": 1.0,
+  "duplicate_survival": 0.6,
+  "duplicate_no_trigger_rate": 0.8933,
+  "duplicate_true_collapse_rate": 1.0,
+  "duplicate_true_n": 94,
+  "duplicate_other_unchanged_rate": 1.0,
+  "duplicate_other_n": 16
+}

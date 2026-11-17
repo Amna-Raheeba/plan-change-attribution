@@ -1,0 +1,17 @@
+{
+  "n_scenarios": 30,
+  "n_changes": 70,
+  "top1": 1.0,
+  "top1_hits": 62,
+  "top1_total": 62,
+  "mean_triggering_set_size": 1.4545,
+  "n_explained_scenarios": 22,
+  "no_single_trigger_correct": 1.0,
+  "no_single_trigger_n": 8,
+  "joint_not_single_correct": 1.0,
+  "joint_n": 10,
+  "verdict_accuracy": 1.0,
+  "false_trigger_rate": 0.0,
+  "false_triggers": 0,
+  "single_changes": 27
+}
